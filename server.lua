@@ -5,7 +5,6 @@ RegisterNetEvent('Tikoz:ShopBuyItem')
 AddEventHandler('Tikoz:ShopBuyItem', function(name, label, prix)
     local source = source
     local xPlayer = ESX.GetPlayerFromId(source)
-    local iteminventaire = xPlayer.getInventoryItem(label).count
     local money = xPlayer.getMoney()
 
     if money >= prix then 
